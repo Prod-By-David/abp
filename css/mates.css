@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMGgxMHYxMEgweiIgZmlsbD0iI0NDQ0NDQyIgc3Ryb2tlPSIjQkRCREJEIiBzdHJva2Utd2lkdGg9IjAuNSIvPjwvc3ZnPgo=');
+    background-repeat: repeat;
+    background-size: 50px 50px; /* Ajusta el tamaño del patrón si es necesario */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #2C3E50; /* Verde oscuro */
+    color: #fff;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex; /* Para alinear elementos horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 15px 20px; /* Mayor espacio alrededor de la barra */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto moderno */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Para que la lista ocupe el espacio disponible */
+    display: flex; /* Para alinear los elementos de la lista en línea */
+    justify-content: center; /* Centrar horizontalmente los elementos de la lista */
+}
+
+.navbar ul li {
+    margin: 0 30px; /* Aumentar el espacio entre los elementos de la barra de navegación */
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Añadir espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.navbar ul li a:hover {
+    background: #17222d; /* Verde claro al pasar el ratón */
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px; /* Para que no estorbe la barra superior */
+    left: -250px; /* Fuera de la pantalla inicialmente */
+    width: 250px;
+    height: 100%;
+    background: #34495E; /* Gris oscuro */
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center; /* Centrar el texto en la barra lateral */
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Para hacer que el área clickeable sea más grande */
+    transition: background 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.sidebar ul li a:hover {
+    background: #17222d; /* Verde claro al pasar el ratón */
+}
+
+.toggle-btn {
+    background: #2C3E50; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Aumentar el tamaño del botón */
+    margin-right: 20px; /* Espacio entre el botón y el menú */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.toggle-btn:hover {
+    background: #17222d; /* Verde claro al pasar el ratón */
+}
+
+main {
+    padding: 80px 20px; /* Espacio para la barra superior */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados para secciones */
+    background-color: white; /* Fondo blanco para las secciones */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    max-width: 800px; /* Establecer un ancho máximo para el contenido */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+    text-align: center; /* Centrar los títulos */
+    text-decoration: underline; /* Subrayar los títulos */
+    font-weight: bold; /* Hacer que los títulos sean más destacados */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #2C3E50; /* Color de los títulos */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2C3E50; /* Verde oscuro */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar los íconos horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.social-icons a {
+    color: #2C3E50; /* Color de los íconos */
+    font-size: 30px; /* Tamaño de los íconos */
+    margin: 0 15px; /* Espacio entre los íconos */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.social-icons a:hover {
+    color: #17222d; /* Color al pasar el ratón sobre los íconos */
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio superior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes de celdas */
+    padding: 10px; /* Espacio dentro de las celdas */
+    text-align: center; /* Alinear texto al centro */
+}
+
+th {
+    background-color: #2C3E50; /* Color de fondo para encabezados */
+    color: white; /* Color de texto para encabezados */
+    font-weight: bold; /* Hacer el texto de los encabezados más destacado */
+}
+
+tr:nth-child(even) {
+    background-color: #ECF0F1; /* Color de fondo para filas pares */
+}
+
+tr:hover {
+    background-color: #BDC3C7; /* Color de fondo al pasar el ratón */
+}
+
+.clock {
+    color: #fff; /* Color del texto del reloj */
+    font-size: 18px; /* Tamaño del texto */
+    margin-left: 20px; /* Espacio entre el reloj y el contenido anterior */
+    font-weight: bold; /* Hacer el texto del reloj más destacado */
+    display: flex; /* Para centrar el reloj verticalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para las imágenes con recuadro y centradas */
+.main-image {
+    display: inline-block; /* Para que cada imagen se trate como un bloque en línea */
+    margin: 10px; /* Separación entre las imágenes */
+    max-width: 100%; /* Ajuste de ancho máximo al 100% del contenedor */
+    height: auto; /* Ajuste proporcional de la altura */
+    border: 5px solid #2C3E50; /* Añadir un borde decorativo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    background-color: #fff; /* Fondo blanco detrás de la imagen */
+    padding: 10px; /* Espacio interno para darle más marco */
+}
+
+/* Ajuste para el contenedor de imágenes */
+#medicion {
+    display: flex;
+    flex-wrap: wrap; /* Para que las imágenes se alineen en filas si no caben en una sola línea */
+    justify-content: center; /* Centrar horizontalmente todas las imágenes */
+    gap: 20px; /* Separación entre las imágenes */
+}

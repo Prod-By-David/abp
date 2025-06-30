@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÚSICA</title>
+    <link rel="stylesheet" href="../css/musica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#how-it-started">Cómo surgió</a></li>
+                <li><a href="#students">Alumnos</a></li>
+            </ul>
+            <div class="clock" id="clock"></div>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="./biologia.html">Biología</a></li>
+            <li><a href="./botanica.html">Botánica</a></li>
+            <li><a href="./fyq.html">Física y Química</a></li>
+            <li><a href="./lengua.html">Lengua</a></li>
+            <li><a href="./matematicas.html">Matemáticas</a></li>
+            <li><a href="./musica.html">Música</a></li>
+            <li><a href="./sociales.html">Sociales</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="video">
+            <h2>CANCIÓN DE LA OLIVA</h2>
+<p>A continuación, podéis ver un video interpretando una canción sobre la oliva, con nuestro profesor <a href="https://es.wikipedia.org/wiki/Hermes_Luaces" class="link-hermes">Hermes</a>.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BwqWRtrmDqg" 
+            title="CANCIÓN DE LA OLIVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DAVID BRAVO BRAVO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.navbar ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+    
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>    
+
+</body>
+</html>

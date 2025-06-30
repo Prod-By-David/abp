@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTÁNICA</title>
+    <link rel="stylesheet" href="../css/botanica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#how-it-started">Cómo surgió</a></li>
+                <li><a href="#students">Alumnos</a></li>
+            </ul>
+            <div class="clock" id="clock"></div>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="./biologia.html">Biología</a></li>
+            <li><a href="./botanica.html">Botánica</a></li>
+            <li><a href="./fyq.html">Física y Química</a></li>
+            <li><a href="./lengua.html">Lengua</a></li>
+            <li><a href="./matematicas.html">Matemáticas</a></li>
+            <li><a href="./musica.html">Música</a></li>
+            <li><a href="./sociales.html">Sociales</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="definiciones">
+            <h1>DEFICIONES</h1>
+            <p><b>· REPRODUCCIÓN DE UN INSECTO POR PARTOGÉNESIS</b>: tipo de reproducción asexual en la cual un gameto femenino u óvulo se convierte en un individuo sin fertilización.</p>
+            <p><b>· FILÓFAGO</b>: que se alimenta a base de hojas.</p>
+            <p><b>· ANTÓFAGO</b>: dicho de un animal que se alimenta principalmente de flores.</p>
+            <p><b>· CARPÓGRAFO</b>: referencia al animal que se alimenta principalmente de frutos.</p>
+        </section>
+
+        <section id="problemas">
+            <h2>PROBLEMAS NATURALES</h2>
+            <table class="pest-disease-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Daños que genera</th>
+                        <th>Tratamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Negrilla</strong></td>
+                        <td>
+                            - Pueden causar manchas en las hojas. <br>
+                            - Reducción del rendimiento de las aceitunas. <br>
+                            - Puede provocar la caída prematura de frutos.
+                        </td>
+                        <td>
+                            - Aplicación de fungicidas específicos. <br>
+                            - Remoción de partes afectadas de la planta. <br>
+                            - Mejorar la ventilación y circulación de aire en el cultivo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mosca del olivo</strong></td>
+                        <td>
+                            - Dañan la pulpa de las aceitunas. <br>
+                            - Generan caída de frutos. <br>
+                            - Afectan la calidad del aceite producido.
+                        </td>
+                        <td>
+                            - Monitoreo y trampas para la mosca. <br>
+                            - Aplicación de insecticidas específicos. <br>
+                            - Mantener el entorno limpio de restos de aceitunas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cochinilla de la tizne</strong></td>
+                        <td>
+                            - Causan manchas oscuras en las hojas. <br>
+                            - Pueden debilitar la planta al alimentarse de su savia. <br>
+                            - Facilitan el crecimiento de hongos.
+                        </td>
+                        <td>
+                            - Aplicación de insecticidas o aceites hortícolas. <br>
+                            - Control biológico mediante insectos depredadores. <br>
+                            - Remoción manual de los insectos en casos leves.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="image-gallery">
+            <figure>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT6TUTbRmKXtQh4s9dgqkGAqy9ozgX1h2VVyhfQOfKF1MEAomvFIVqoD3aDKSYhZu3qVfu73NNTU6o89eutub7EsYx3Sr2Y0J7VLWNEuWMoakqPzFvhKdLBeLvYUagdHrN3C3Jvzg1Iktv/s320/1.jpg" alt="Hongos en olivos" class="gallery-image">
+                <figcaption>Picadura de la mosca del olivo.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7TNBbNE9LtirI6hHDfg1BuVsOL6N1tMj3iose9uSfpC4x1A3Fe02AD57ZyPMXxZVoLTD470fw_oianps7ULzLdctLo_CWp8c_ElXk4FNBaSHD2KG01C0J6CiRpHKehx9W-mQWWAJrCBHN/s1600/2.jpg" alt="Mosca del olivo" class="gallery-image">
+                <figcaption>Una polilla del olivo.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyWtExjS4_5dGGqNGUArQWPkGQDX3s2isl45FGDQaJWYPtFZW0LwV0sAQFk3rWsf8YZ8mNu96h8Zmla7b8UbP0uQTDfl0X37CrSE0tuHDav3NxqFBpEQ4CwYJCZLZw7-Z_h-IHP4_9_N0t/s1600/3.jpg" alt="Cochinilla de la tizne" class="gallery-image">
+                <figcaption>Una plaga de cochinillas de la Tizne.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisfxIeoxAJzscbF3QU2Oh0Fdel4vfgxjYayjgOl0dyA9GJNnHAQuRRmvGrmGUmCMlyIC8_ZSpB5celZM3l_UyUsbZixxBtKIr86zbtrLTIF0JThS9q5oxJKz3zjfCAAgOFLKXmQFrGGNvV/s320/4.jpg" alt="Aceitunas sanas" class="gallery-image">
+                <figcaption>Una cochinilla de la Tizne.</figcaption>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DAVID BRAVO BRAVO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.navbar ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+    
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>    
+
+</body>
+</html>

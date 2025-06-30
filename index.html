@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABP | Vino y Aceite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- Barra de Navegación Superior -->
+    <header>
+        <nav class="navbar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#how-it-started">Cómo surgió</a></li>
+                <li><a href="#students">Alumnos</a></li>
+            </ul>
+            <div class="clock" id="clock"></div>
+        </nav>
+    </header>
+
+    <!-- Barra Lateral -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="./asignaturas/biologia.html">Biología</a></li>
+            <li><a href="./asignaturas/botanica.html">Botánica</a></li>
+            <li><a href="./asignaturas/fyq.html">Física y Química</a></li>
+            <li><a href="./asignaturas/lengua.html">Lengua</a></li>
+            <li><a href="./asignaturas/matematicas.html">Matemáticas</a></li>
+            <li><a href="./asignaturas/musica.html">Música</a></li>
+            <li><a href="./asignaturas/sociales.html">Sociales</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="home">
+            <h1>BIENVENIDOS Y BIENVENIDAS</h1>
+            <p>En esta página encontraréis información sobre la historia del vino y el aceite de nuestro pueblo, <b>San Martín de Valdeiglesias</b>.</p>
+        </section>
+
+        <section id="about">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos un grupo de 3º de la ESO, hemos creado un blog para difundir contenidos sobre la aceituna y la vendimia de nuestro pueblo.</p>
+            <p>Debajo, os dejamos los links que os llevarán a las redes sociales y a la página del instituto <b>IES Pedro de Tolosa</b>.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/iespedrodetolosa/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/iespedrodetolosa/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fiespedrotolosa" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i> <!-- Aquí se ha cambiado -->
+                </a>
+                <a href="https://www.youtube.com/channel/UCl5Y2K805-3vAcndF8HJGHw" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://iesptolosa.org" target="_blank" title="Página web">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="how-it-started">
+            <h2>CÓMO SURGIÓ</h2>
+            <p>Este proyecto surgió de la mano de nuestros profesores, realizando una propuesta de enseñanza conocida como <b>ABP (Aprendizaje Basado en Proyectos)</b>.</p>
+            <p>El tema tenía que ser relacionado con nuestro pueblo, y qué mejor tema que no fuera dos de las cosas que más destacan en él, el vino y el aceite.</p>
+            <p>A través de este proyecto y de las asignaturas que cursamos, nos han enseñado nuevas maneras de aprendizaje.</p>
+        </section>
+
+        <section id="students">
+            <h2>ALUMNOS, ALUMNAS Y PROFESORES</h2>
+            <p>Lista de los alumnos, alumnas y profesores que han sido participes de este proyecto:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andrés Rodríguez Castilla</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Angélica Rodríguez Abreu</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandro Luengo Caselles</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Belén García Martín</td>
+                        <td>Profesora</td>
+                    </tr>
+                    <tr>
+                        <td>David Bravo Bravo</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Iván Lastras Araújo</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Javier Muñoz García</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Jorge García Martín</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Julio Hernández Estévez</td>
+                        <td>Alumno</td>
+                    </tr>
+                    <tr>
+                        <td>Mar Encinar</td>
+                        <td>Profesora</td>
+                    </tr>
+                    <tr>
+                        <td>María Rebollo Rodríguez</td>
+                        <td>Profesora</td>
+                    </tr>
+                    <tr>
+                        <td>Paz Mejuto</td>
+                        <td>Profesora</td>
+                    </tr>
+                    <tr>
+                        <td>Raquel Blázquez Micieces</td>
+                        <td>Alumno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 David Bravo Bravo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        // Desplazamiento suave al hacer clic en los enlaces de la barra de navegación
+        document.querySelectorAll('.navbar ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); // Evita el comportamiento por defecto
+    
+                const targetId = this.getAttribute('href'); // Obtener el ID del destino
+                const targetElement = document.querySelector(targetId); // Seleccionar el elemento objetivo
+    
+                // Realizar el desplazamiento suave
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' // Asegura que el bloque empiece en la parte superior
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0'); // Obtener las horas y añadir ceros a la izquierda
+            const minutes = String(now.getMinutes()).padStart(2, '0'); // Obtener los minutos
+            const seconds = String(now.getSeconds()).padStart(2, '0'); // Obtener los segundos
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`; // Actualizar el contenido del reloj
+        }
+    
+        setInterval(updateClock, 1000); // Actualizar el reloj cada segundo
+        updateClock(); // Inicializar el reloj
+    </script>    
+
+</body>
+</html>
